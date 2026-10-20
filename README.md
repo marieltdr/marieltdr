@@ -1,8 +1,8 @@
 ## Hello!
 
-My name is Mariel Del Rosario and this is my GIS portfolio website. Live link [here](https://marieltdr.github.io/marieltdr/).
+Welcome to my profile! My name is Mariel Del Rosario. I'm a recent graduate from the University of California, Berkeley, with a B.A. in Geography (highest honors). I'm pursuing a career in Geospatial Data Science.
 
-Built using HTML and CSS.
+You can see my portfolio [here](https://marieltdr.github.io/marieltdr/). Built using HTML and CSS.
 
 <!--
 **marieltdr/marieltdr** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
