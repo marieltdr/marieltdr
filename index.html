@@ -19,17 +19,9 @@
       color: var(--text);
       line-height: 1.6;
       background-image: url('assets/wallpaper.jpg'); 
-    
-    /* Prevents the image from repeating like a tile grid */
       background-repeat: no-repeat; 
-    
-    /* Stretches the image to cover the entire screen */
       background-size: cover; 
-    
-    /* Keeps the background fixed in place while scrolling */
       background-attachment: fixed; 
-    
-    /* Centers the background image */
       background-position: center; 
     }
     header {
@@ -89,6 +81,70 @@
       text-decoration: none;
       border-radius: 4px;
       font-size: 0.9rem;
+    }
+    
+    /* Presentation Section Styling */
+    .section-block {
+      padding: 3rem 0;
+      background-color: #ffffff;
+      border-top: 1px solid #e2e8f0;
+    }
+    
+    .presentation-card {
+      display: flex;
+      gap: 2rem;
+      background: var(--bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      align-items: center;
+    }
+    
+    .presentation-image {
+      flex: 1;
+      max-width: 350px;
+    }
+    
+    .presentation-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    
+    .presentation-details {
+      flex: 2;
+    }
+    
+    .presentation-details h3 {
+      margin: 0.5rem 0;
+      color: var(--primary);
+    }
+    
+    .presentation-meta {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 0.75rem;
+    }
+    
+    .badge {
+      display: inline-block;
+      background-color: #e0e7ff;
+      color: #3730a3;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+    }
+    
+    /* Responsive adjustment for mobile screens */
+    @media (max-width: 768px) {
+      .presentation-card {
+        flex-direction: column;
+      }
+      .presentation-image {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
@@ -167,6 +223,38 @@
       
     </div>
   </div>
+
+  <!-- Section 2: AAG Presentation -->
+  <section class="section-block">
+    <div class="container">
+      <h2>Presentations & Research</h2>
+      
+      <div class="presentation-card">
+        <div class="presentation-image">
+          <img src="assets/aag-presentation-thumb.jpg" alt="AAG Presentation Slide Preview">
+        </div>
+        <div class="presentation-details">
+          <span class="badge">AAG Annual Meeting 2026</span>
+          <h3>Title of Your AAG Presentation or Research Paper</h3>
+          <p class="presentation-meta"><strong>Session:</strong> Applied GIS & Spatial Modeling | Denver, CO</p>
+          <p>A brief 2–3 sentence abstract highlighting the spatial problem, data methods used, and key findings presented at the conference.</p>
+          
+          <div class="tags" style="margin-bottom: 1rem;">
+            <span class="tag">Conference Speaker</span>
+            <span class="tag">Spatial Analysis</span>
+            <span class="tag">ArcGIS Pro</span>
+          </div>
+
+          <div class="btn-group">
+            <a href="assets/aag-presentation-slides.pdf" target="_blank" class="btn">View Slides (PDF)</a>
+            <!-- Optional: Link to abstract or poster -->
+            <!-- <a href="assets/aag-poster.pdf" target="_blank" class="btn btn-outline">View Poster</a> -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
